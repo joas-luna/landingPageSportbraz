@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logotipo-1.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/template-styles/header.css">
+    <link rel="stylesheet" href="styles/template-styles/footer.css">
     <title>SportBraz</title>
 </head>
 <body>
@@ -15,12 +17,17 @@
     </header>
     <main>
         <aside id="home">
+
+            <div id="imagem-topo">
+                <img src="./img/Imagem-topo.png" alt="imagem de topo">
+            </div>
             <h2>Valorizando o esporte brasileiro em todas as suas formas</h2>
             <p>O SportBraz é uma plataforma dedicada a dar visibilidade a atletas, projetos sociais e à cultura esportiva no Brasil — do esporte de base aos e-sports. Conectamos talentos, promovemos oportunidades e ampliamos o acesso à informação para quem deseja crescer no cenário esportivo.</p>
             <div class="buttons">
                 <a href="/about" class="button">Explorar Atletas</a>
                 <a href="/contact" class="button">Conhecer Projetos</a>
             </div>
+
         </aside>
     </main>
     <footer>

@@ -6,8 +6,8 @@
 
 header {
     background-color: #202020;
-    padding: 10px 0;
-    display: fixed;
+    padding: 20px 0;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
