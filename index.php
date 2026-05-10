@@ -35,17 +35,17 @@
 
             <div class="cards">
                 <div class="card">
-                    <img src="./img/futebol.jpg" alt="">
+                    <img src="./img/futebol-destaques.avif" alt="">
                     <h3>Futebol</h3>
                 </div>
 
                 <div class="card">
-                    <img src="./img/volei.jpg" alt="">
+                    <img src="./img/volei-destaque.jpg" alt="">
                     <h3>Vôlei</h3>
                 </div>
 
                 <div class="card">
-                    <img src="./img/esports.jpg" alt="">
+                    <img src="./img/esport-destaque.webp" alt="">
                     <h3>E-sports</h3>
                 </div>
             </div>
@@ -72,9 +72,27 @@
             <h2>Últimas notícias</h2>
 
             <article>
-                <img src="./img/noticia1.jpg" alt="">
-                <h3>Brasil cresce nos e-sports</h3>
-                <p>O cenário competitivo brasileiro vem ganhando destaque internacional...</p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/RDB7cvTNLQ8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>IEM Rio 2026 | CS2</h3>
+                <p>A IEM Rio 2026 entregou uma das finais mais intensas da história recente do Counter-Strike. 
+                    O confronto entre Team Spirit e Team Vitality transformou a arena em um verdadeiro espetáculo 
+                    para os fãs brasileiros de e-sports. A Team Spirit chegou à grande final mostrando um estilo 
+                    agressivo e extremamente coordenado, apostando em jogadas rápidas e domínio mecânico. 
+                    Já a Vitality entrou como uma das equipes mais consistentes do campeonato, trazendo experiência, 
+                    controle tático e uma defesa quase impecável nos mapas decisivos. O duelo ficou marcado por rounds
+                    equilibrados, viradas inesperadas e clutchs decisivos que levantaram a torcida do início ao fim.
+                    A atmosfera no Rio de Janeiro mostrou mais uma vez porque o Brasil é considerado um dos maiores
+                    palcos do Counter-Strike mundial. Além da competição, a final reforçou o crescimento dos e-sports
+                    no Brasil, atraindo milhares de espectadores presencialmente e milhões acompanhando online.
+                    Eventos como a IEM Rio ajudam a consolidar o cenário competitivo brasileiro como referência global
+                    no entretenimento digital e esportivo.</p>
             </article>
         </section>
 
