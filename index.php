@@ -29,7 +29,81 @@
             </div>
 
         </aside>
+
+        <section class="sports">
+            <h2>Modalidades em destaque</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="./img/futebol.jpg" alt="">
+                    <h3>Futebol</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./img/volei.jpg" alt="">
+                    <h3>Vôlei</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./img/esports.jpg" alt="">
+                    <h3>E-sports</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="numbers">
+            <div class="number-box">
+                <h2>+500</h2>
+                <p>Atletas cadastrados</p>
+            </div>
+
+            <div class="number-box">
+                <h2>+120</h2>
+                <p>Projetos esportivos</p>
+            </div>
+
+            <div class="number-box">
+                <h2>27</h2>
+                <p>Estados alcançados</p>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Últimas notícias</h2>
+
+            <article>
+                <img src="./img/noticia1.jpg" alt="">
+                <h3>Brasil cresce nos e-sports</h3>
+                <p>O cenário competitivo brasileiro vem ganhando destaque internacional...</p>
+            </article>
+        </section>
+
+        <section class="esports-banner">
+            <div class="content">
+                <h2>O futuro também é digital</h2>
+                <p>Conheça o crescimento dos e-sports no Brasil.</p>
+            </div>
+        </section>
+
+        <section class="athletes">
+            <h2>Atletas em destaque</h2>
+
+            <div class="athlete-card">
+                <img src="./img/atleta1.jpg" alt="">
+                <h3>Lucas Andrade</h3>
+                <p>Jogador profissional de vôlei de praia</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Faça parte do SportBraz</h2>
+            <p>Descubra atletas, projetos e o futuro do esporte brasileiro.</p>
+        
+            <a href="#" class="button">Começar agora</a>
+        </section>
+
     </main>
+
     <footer>
         <?php
             include './templates/footer.html';
