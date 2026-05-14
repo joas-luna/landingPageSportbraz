@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "nome": "Lucas Andrade",
+    "esporte": "Vôlei de Praia",
+    "idade": 24,
+    "descricao": "Atleta destaque do cenário nacional.",
+    "imagem": "img/atletas/lucas.jpg"
+  },
+
+  {
+    "id": 2,
+    "nome": "Rafael Lima",
+    "esporte": "Counter-Strike",
+    "idade": 19,
+    "descricao": "Jogador profissional de e-sports.",
+    "imagem": "img/atletas/rafael.jpg"
+  }
+]

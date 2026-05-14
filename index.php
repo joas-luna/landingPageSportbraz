@@ -98,8 +98,30 @@
 
         <section class="esports-banner">
             <div class="content">
-                <h2>O futuro também é digital</h2>
-                <p>Conheça o crescimento dos e-sports no Brasil.</p>
+                <h2>Futevôlei também é esporte</h2>
+
+                <img src="./img/futevolei.webp" alt="Futevôlei">
+                
+                <p>
+                    Criado nas praias do Rio de Janeiro na década de 1960, o futevôlei mistura elementos
+                    do futebol e do vôlei em uma combinação extremamente técnica e física. Os jogadores usam
+                    apenas pés, cabeça, peito e ombros para manter a bola no ar e ultrapassar a rede,
+                    sem poder utilizar as mãos.
+                </p>
+
+                <p>
+                    O que muita gente não percebe é o nível de preparo exigido pela modalidade.
+                    Reflexo rápido, coordenação motora, resistência física, impulsão e controle corporal
+                    são fundamentais. Em partidas profissionais, os atletas executam movimentos acrobáticos
+                    e jogadas aéreas que exigem anos de treinamento.
+                </p>
+
+                <p>
+                    Além do espetáculo visual, o futevôlei se tornou parte da cultura esportiva brasileira,
+                    principalmente nas regiões litorâneas. Hoje, o esporte cresce internacionalmente
+                    e já possui torneios profissionais, atletas patrocinados e campeonatos transmitidos
+                    pela internet.
+                </p>
             </div>
         </section>
 
