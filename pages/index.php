@@ -1,0 +1,1 @@
+<?php header("Location: /landingPageSportbraz?page=pages/mostrarAtletas"); ?>
