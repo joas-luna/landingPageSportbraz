@@ -24,8 +24,8 @@
             <h2>Valorizando o esporte brasileiro em todas as suas formas</h2>
             <p>O SportBraz é uma plataforma dedicada a dar visibilidade a atletas, projetos sociais e à cultura esportiva no Brasil — do esporte de base aos e-sports. Conectamos talentos, promovemos oportunidades e ampliamos o acesso à informação para quem deseja crescer no cenário esportivo.</p>
             <div class="buttons">
-                <a href="/about" class="button">Explorar Atletas</a>
-                <a href="/contact" class="button">Conhecer Projetos</a>
+                <a href="./pages/mostrarAtletas.php" class="button">Explorar Atletas</a>
+                <a href="./pages/projetos.php" class="button">Conhecer Projetos</a>
             </div>
 
         </aside>

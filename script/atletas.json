@@ -1,19 +1,55 @@
 [
   {
     "id": 1,
-    "nome": "Lucas Andrade",
-    "esporte": "Vôlei de Praia",
-    "idade": 24,
-    "descricao": "Atleta destaque do cenário nacional.",
-    "imagem": "img/atletas/lucas.jpg"
+    "nome": "Felipe Toledo",
+    "esporte": "Surfe",
+    "idade": 29,
+    "descricao": "Filipe Toledo é surfista desde o berço. Nas águas da Praia Grande, em São Paulo, Filipinho pegou as primeiras ondas e nunca mais parou. Detentor de uma carreira vitoriosa, o brasileiro não esquece as raízes. Em Ubatuba, sua cidade natal, o esportista mantém projetos sociais para atender crianças e organiza eventos para descobrir novos talentos. Em Paris 2024, Toledo é favorito à medalha de ouro.",
+    "imagem": "img/filipe_toledo.webp"
   },
 
   {
     "id": 2,
-    "nome": "Rafael Lima",
-    "esporte": "Counter-Strike",
-    "idade": 19,
-    "descricao": "Jogador profissional de e-sports.",
-    "imagem": "img/atletas/rafael.jpg"
+    "nome": "Rayssa Leal",
+    "esporte": "Skate",
+    "idade": 18,
+    "descricao": "Rayssa Mendes Leal nasceu em 4 de janeiro de 2008, em Imperatriz, Maranhão. Começou a andar de skate aos seis anos, após ganhar um skate de aniversário, e viralizou nas redes sociais aos sete anos com um vídeo fantasiada de fada executando um heelflip, o que lhe rendeu o apelido de “Fadinha do Skate” e reconhecimento internacional, inclusive de Tony Hawk.",
+    "imagem": "img/rayssa-leal.jpg"
+  },
+
+  {
+    "id": 3,
+    "nome": "Marta Vieira",
+    "esporte": "Futebol Feminino",
+    "idade": 40,
+    "descricao": "Marta Vieira da Silva, conhecida como a Rainha do Futebol, é uma das jogadoras de futebol mais icônicas e influentes do mundo. Nascida em Dois Riachos, Alagoas, em 19 de fevereiro de 1986, Marta conquistou seis prêmios de Melhor Jogadora do Mundo pela FIFA e é a maior artilheira da história da Seleção Brasileira, com 116 gols. Ela também é a primeira jogadora a marcar em cinco edições diferentes da Copa do Mundo.",
+    "imagem": "img/Marta-Vieira.jpg"
+  },
+
+  {
+    "id": 4,
+    "nome": "Robson Conceição",
+    "esporte": "Boxer",
+    "idade": 37,
+    "descricao": "Robson Conceição é um pugilista brasileiro que se destacou como o primeiro brasileiro a conquistar a medalha de ouro olímpica no boxe. Ele começou sua carreira no boxe aos 13 anos, inspirado por lutas de rua que viu na TV. Conceição se destacou no amador, conquistando vitórias em torneios sul-americanos e pan-americanos, e se classificou para os Jogos Olímpicos do Rio de Janeiro 2016, onde derrotou o coreano Choe Chol-su na final dos 60 kg.",
+    "imagem": "img/robson-conceicao.webp"
+  },
+
+  {
+    "id": 5,
+    "nome": "Rebeca Andrade",
+    "esporte": "Ginástica Artística",
+    "idade": 27,
+    "descricao": "Rebeca Rodrigues de Andrade nasceu em 8 de maio de 1999, em Guarulhos, São Paulo. Desde pequena, ela demonstrou interesse pela ginástica, iniciando sua trajetória aos quatro anos de idade, quando foi apresentada ao esporte por meio de um programa social da prefeitura. Criada em uma família humilde, Rebeca foi sustentada por sua mãe, Rosa Santos, que trabalhava como empregada doméstica e teve um papel fundamental em sua carreira esportiva.",
+    "imagem": "img/rebeca-andrade.webp"
+  },
+
+  {
+    "id": 6,
+    "nome": "Rodolfo Vieria",
+    "esporte": "Lutador de Artes Marciais Mistas (MMA)",
+    "idade": 36,
+    "descricao": "Rodolfo Vieira é um lutador de MMA brasileiro que tem se destacado no UFC, competindo na divisão dos médios. Ele é quatro vezes campeão mundial de Jiu-Jítsu brasileiro e sete vezes campeão mundial. Vieira é conhecido por seu estilo de Jiu-Jítsu diversificado, habilidades de passagem de guarda rápidas e grande destreza física. Ele começou sua carreira no MMA em 2019 e tem um cartel de 11 vitórias e 4 derrotas. Vieira tem um grande potencial para se tornar um dos lutadores mais dominantes do MMA, mas ainda enfrenta desafios na transição para o MMA.",
+    "imagem": "img/rodolfo-vieira.webp"
   }
 ]
