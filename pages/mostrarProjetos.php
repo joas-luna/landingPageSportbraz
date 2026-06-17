@@ -1,6 +1,6 @@
-﻿<?php
-$dataFile = __DIR__ . '/../script/atletas.json';
-$athletes = [];
+<?php
+$dataFile = __DIR__ . '/../script/projetos.json';
+$projects = [];
 $errorMessage = '';
 
 if (file_exists($dataFile)) {
@@ -8,18 +8,22 @@ if (file_exists($dataFile)) {
     $decoded = json_decode($json, true);
 
     if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
-        $athletes = $decoded;
+        $projects = $decoded;
     } else {
-        $errorMessage = 'Erro ao carregar os dados dos atletas. Verifique o arquivo JSON.';
+        $errorMessage = 'Erro ao carregar os dados dos projetos. Verifique o arquivo JSON.';
     }
 } else {
-    $errorMessage = 'Arquivo de dados dos atletas não encontrado.';
+    $errorMessage = 'Arquivo de dados dos projetos não encontrado.';
 }
 
 function resolveImagePath(string $relativePath): string
 {
-    if (empty($relativePath)) return '../img/atletas-placeholder.png';
-    if (strpos($relativePath, '/') === 0) return $relativePath;
+    if (empty($relativePath)) {
+        return '../img/futebol-destaques.avif';
+    }
+    if (strpos($relativePath, '/') === 0) {
+        return $relativePath;
+    }
     return '../' . ltrim($relativePath, './');
 }
 ?>
@@ -32,7 +36,7 @@ function resolveImagePath(string $relativePath): string
 <link rel="shortcut icon" href="../img/logotipo-1.png" type="image/x-icon">
 <link rel="stylesheet" href="../styles/template-styles/header.css">
 <link rel="stylesheet" href="../styles/template-styles/footer.css">
-<title>Atletas em Destaque | SportBraz</title>
+<title>Projetos em Destaque | SportBraz</title>
 
 <style>
 
@@ -73,7 +77,6 @@ body{
     color: var(--text);
 }
 
-
 /* =========================
    MAIN
 ========================= */
@@ -82,6 +85,10 @@ main{
     max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* =========================
@@ -94,16 +101,24 @@ main{
     border-radius: 24px;
     padding: 35px;
     box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 }
 
 .intro h1{
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+    font-size: 2.6rem;
+    margin-bottom: 0;
 }
 
 .intro p{
     color: var(--muted);
     line-height: 1.6;
+    max-width: 760px;
 }
 
 /* =========================
@@ -112,9 +127,11 @@ main{
 
 .stats{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
     margin-top: 25px;
+    width: 100%;
+    max-width: 960px;
 }
 
 .stat-card{
@@ -140,86 +157,129 @@ main{
    GRID
 ========================= */
 
-.athlete-grid{
+.project-grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-top: 40px;
+    align-items: start;
 }
 
 /* =========================
    CARD
 ========================= */
 
-.athlete-card{
+.project-card{
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(145deg, var(--card), var(--card2));
     border: 1px solid var(--border);
     border-radius: 24px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    transition: .3s ease;
+    transition: .3s ease, border-color .3s ease;
+    text-decoration: none;
+    color: inherit;
+    min-height: 100%;
 }
 
-.athlete-card:hover{
+.project-card:hover{
     transform: translateY(-8px);
     border-color: rgba(56,189,248,0.4);
 }
 
 /* IMAGE */
 
-.athlete-card figure{
-    height: 260px;
+.project-card figure{
+    height: 240px;
     overflow: hidden;
 }
 
-.athlete-card img{
+.project-card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: .4s ease;
 }
 
-.athlete-card:hover img{
+.project-card:hover img{
     transform: scale(1.05);
 }
 
-/* CONTENT */
-
-.card-body{
-    padding: 20px;
+.project-card .card-body{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
 }
 
-.card-body h2{
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+.project-title{
+    font-size: 1.55rem;
+    margin-bottom: 8px;
 }
 
-.card-body p{
+.project-description{
     color: var(--muted);
-    font-size: .95rem;
-    line-height: 1.6;
+    font-size: .96rem;
+    line-height: 1.7;
+    margin: 0;
+    flex: 1;
+}
+
+.project-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.project-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    background: rgba(56,189,248,0.16);
+    color: var(--blue);
+    border-radius: 999px;
+    border: 1px solid rgba(56,189,248,0.25);
+    font-size: .82rem;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.project-card:hover .project-button{
+    background: rgba(56,189,248,0.24);
+    transform: translateY(-1px);
 }
 
 /* META */
 
-.athlete-meta{
+.project-meta{
     display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
 }
 
-.athlete-meta span{
+.project-meta span{
     background: rgba(255,255,255,0.05);
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 999px;
     color: var(--muted);
-    font-size: .85rem;
+    font-size: .78rem;
+    line-height: 1.3;
+    flex: 1 1 110px;
+    min-width: 90px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* =========================
-   ERROR
-========================= */
+/* ERROR */
 
 .message-box{
     margin-top: 20px;
@@ -230,13 +290,10 @@ main{
     color: #ffb4b4;
 }
 
-
-/* =========================
-   RESPONSIVO
-========================= */
+/* RESPONSIVO */
 
 @media (max-width: 900px){
-    .athlete-grid,
+    .project-grid,
     .stats{
         grid-template-columns: 1fr 1fr;
     }
@@ -247,7 +304,7 @@ main{
 }
 
 @media (max-width: 600px){
-    .athlete-grid,
+    .project-grid,
     .stats{
         grid-template-columns: 1fr;
     }
@@ -266,14 +323,14 @@ main{
 
 <section class="intro">
     <div>
-        <h1>Atletas em destaque</h1>
+        <h1>Projetos em destaque</h1>
         <p>Dados carregados via JSON para facilitar atualização sem mexer no código.</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <span>Atletas</span>
-            <strong><?= count($athletes) ?></strong>
+            <span>Projetos</span>
+            <strong><?= count($projects) ?></strong>
         </div>
         <div class="stat-card">
             <span>Fonte</span>
@@ -292,36 +349,43 @@ main{
     </div>
 <?php endif; ?>
 
-<section class="athlete-grid">
+<section class="project-grid">
 
-<?php foreach ($athletes as $athlete): ?>
-    <article class="athlete-card">
+<?php foreach ($projects as $project): ?>
+    <?php $projectUrl = trim($project['site'] ?? ''); ?>
+    <a class="project-card" href="<?= htmlspecialchars($projectUrl ?: '#') ?>" target="_blank" rel="noopener noreferrer">
 
         <figure>
-            <img src="<?= htmlspecialchars(resolveImagePath($athlete['imagem'] ?? '')) ?>"
-                 alt="<?= htmlspecialchars($athlete['nome'] ?? 'Atleta') ?>">
+            <img src="<?= htmlspecialchars(resolveImagePath($project['imagem'] ?? '')) ?>"
+                 alt="<?= htmlspecialchars($project['nome'] ?? 'Projeto') ?>">
         </figure>
 
         <div class="card-body">
 
-            <h2><?= htmlspecialchars($athlete['nome'] ?? 'Atleta') ?></h2>
+            <h2 class="project-title"><?= htmlspecialchars($project['nome'] ?? 'Projeto') ?></h2>
 
-            <p><?= htmlspecialchars($athlete['descricao'] ?? '') ?></p>
+            <p class="project-description"><?= htmlspecialchars($project['descricao'] ?? '') ?></p>
 
-            <div class="athlete-meta">
-                <span><?= htmlspecialchars($athlete['esporte'] ?? '-') ?></span>
-                <span><?= intval($athlete['idade'] ?? 0) ?> anos</span>
-                <span>#<?= intval($athlete['id'] ?? 0) ?></span>
+            <div class="project-meta">
+                <span><?= htmlspecialchars($project['localidade'] ?? '-') ?></span>
+                <span><?= htmlspecialchars($project['rede-social'] ?? '-') ?></span>
+                <span>#<?= intval($project['id'] ?? 0) ?></span>
+            </div>
+
+            <div class="project-footer">
+                <span class="project-button">Visitar ONG</span>
+                <span><?= htmlspecialchars($projectUrl ? parse_url($projectUrl, PHP_URL_HOST) : 'Sem site') ?></span>
             </div>
 
         </div>
 
-    </article>
+    </a>
 <?php endforeach; ?>
 
 </section>
 
 </main>
+
     <footer class="footer">
         <?php include __DIR__ . '/../templates/footer.php'; ?>
     

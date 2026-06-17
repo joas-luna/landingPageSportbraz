@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "nome": "Associação Cultural Pisada do Sertão",
+    "localidade": "Poço de José de Moura, PB",
+    "rede-social": "@pisadadosertaopb",
+    "site": "https://www.pisadadosertao.org",
+    "descricao": "Promove o desenvolvimento integral de crianças, adolescentes e jovens por meio da cultura, educação, esporte e inclusão social.",
+    "imagem": "img/PISADA.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "ONG Nova Baraúna",
+    "localidade": "Baraúna, PB",
+    "rede-social": "@ongnovabarauna",
+    "site": "https://www.ongnovabarauna.org.br",
+    "descricao": "Desenvolve projetos de esporte, cultura, educação e cidadania para crianças e adolescentes em situação de vulnerabilidade.",
+    "imagem": "img/nova-barauna.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "CICOVI - Centro Integrado de Ações Comunitárias Pela Vida",
+    "localidade": "João Pessoa, PB",
+    "rede-social": "@ongcicovi",
+    "site": "https://www.cicovi.org.br/",
+    "descricao": "Atua com esporte comunitário, inclusão social, oficinas culturais e apoio educacional para crianças e adolescentes.",
+    "imagem": "img/cicovi.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Associação Desportiva Bola no Pé",
+    "localidade": "João Pessoa, PB",
+    "rede-social": "@adbolanope",
+    "site": "https://bolanope.com.br/",
+    "descricao": "Tem por objetivo ser uma instituição esportiva, para impulsionar o desenvolvimento de práticas esportivas, sociais, educacionais e culturais voltadas para o fortalecimento de vínculos, mediante ações de formação esportiva, capacitações, cursos, formação profissional, agenciamento de integração empresa escola, promoção de eventos, atividades de atenção à saúde humana integradas com assistência social e prevenções de lesões e reabilitação de sequelados.",
+    "imagem": "img/bolanope.png"
+  },
+  {
+    "id": 5,
+    "nome": "Punhos Unidos Projeto Social",
+    "localidade": "São Paulo, SP",
+    "rede-social": "@apukungfu_sao_paulo",
+    "site": "https://apukungfu.com.br/",
+    "descricao": "A Associação Punhos Unidos é uma escola tradicional de Kung Fu (estilo Hung Gar) fundada em 1999 pela Mestre Renata Balestrini, presente em vários estados e países. Em João Pessoa, o projeto atua oferecendo aulas de artes marciais e modalidades como beachboxing voltadas para o desenvolvimento físico, social e inclusivo de crianças e adolescentes.",
+    "imagem": "img/punhosunidos.jpg"
+  },
+
+  {
+    "id": 6,
+    "nome": "Instituto Vincere",
+    "localidade": "São Paulo, SP",
+    "rede-social": "@vincereinstituto",
+    "site": "https://institutovincere.org.br",
+    "descricao": "Você disse: instituto vincereO Instituto Vincere é uma associação privada sem fins lucrativos focada na inclusão social por meio do esporte. Fundada originalmente em março de 2010 como Viver – Instituto de Desenvolvimento de Políticas Sociais, a entidade adotou o nome atual em julho de 2016 e tem sua sede localizada no Centro Histórico de São Paulo.Atuação e ModalidadesO instituto atua no desenvolvimento, promoção e execução de torneios e projetos voltados para diversas práticas esportivas, além de englopar ações em lazer, saúde, cultura e educação.",
+    "imagem": "img/vincere.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "ONG Esporte para Todos",
+    "localidade": "Planaltina, DF",
+    "rede-social": "@aprojetosocialcraquesdofuturo",
+    "site": "https://www.estodo.org",
+    "descricao": "Há mais de 30 anos promove inclusão social por meio do esporte, cultura e ações comunitárias para crianças e jovens.",
+    "imagem": "img/estodo.avif"
+  },
+  {
+    "id": 8,
+    "nome": "Associação Caminho do Esporte (ACE)",
+    "localidade": "Brasília, DF",
+    "rede-social": "@aceparaavida",
+    "site": "https://esportesace.com.br",
+    "descricao": "Utiliza o esporte educacional como ferramenta de transformação social e formação cidadã.",
+    "imagem": "img/ace.png"
+  },
+  {
+    "id": 31,
+    "nome": "ACAISEC - Associação Camburi de Integração Esportiva, Social e Cultural",
+    "localidade": "Vitória, ES",
+    "rede-social": "@acaisec",
+    "site": "https://www.acaisec.org",
+    "descricao": "Utiliza o esporte como ferramenta de transformação social, oferecendo projetos de futsal, judô, futebol e outras modalidades para crianças e adolescentes.",
+    "imagem": "img/acaisec.avif"
+  }
+]

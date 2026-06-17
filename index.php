@@ -25,7 +25,7 @@
             <p>O SportBraz é uma plataforma dedicada a dar visibilidade a atletas, projetos sociais e à cultura esportiva no Brasil — do esporte de base aos e-sports. Conectamos talentos, promovemos oportunidades e ampliamos o acesso à informação para quem deseja crescer no cenário esportivo.</p>
             <div class="buttons">
                 <a href="./pages/mostrarAtletas.php" class="button">Explorar Atletas</a>
-                <a href="./pages/projetos.php" class="button">Conhecer Projetos</a>
+                <a href="./pages/mostrarProjetos.php" class="button">Conhecer Projetos</a>
             </div>
 
         </aside>
@@ -68,7 +68,7 @@
             </div>
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
             <h2>Últimas notícias</h2>
 
             <article>
@@ -305,9 +305,9 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <?php
-            include './templates/footer.html';
+            include './templates/footer.php';
         ?>
     </footer>
 </body>
